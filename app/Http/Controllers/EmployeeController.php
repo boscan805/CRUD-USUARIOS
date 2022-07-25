@@ -50,7 +50,7 @@ class EmployeeController extends Controller
             $EmployeeData['Image'] = $request->file('Image')->store('uploads', 'public');
         }
 
-        
+        return redirect('Employees');
     }
 
     /**
